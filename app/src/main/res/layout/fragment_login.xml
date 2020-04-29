@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginFragment"
+    android:background="#13232c"
+    >
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="314dp"
+        android:layout_height="79dp"
+        android:src="@drawable/ust"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.03" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="66dp"
+        android:layout_height="88dp"
+        android:layout_marginStart="380dp"
+        android:src="@drawable/icon1"
+        app:layout_constraintBottom_toTopOf="@+id/login_password"
+        app:layout_constraintEnd_toStartOf="@+id/imageView"
+        app:layout_constraintHorizontal_bias="0.522"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.453" />
+
+    <EditText
+        android:id="@+id/login_email"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:backgroundTint="#f7a823"
+        android:ems="10"
+        android:hint="E-mail"
+        android:inputType="textPersonName"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/buttonGirisYap"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.432"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.623" />
+
+    <EditText
+        android:id="@+id/login_password"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#f7a823"
+        android:ems="10"
+        android:hint="Şifre"
+        android:inputType="textPassword"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.432"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/login_email"
+        app:layout_constraintVertical_bias="0.117" />
+
+    <Button
+        android:id="@+id/buttonGirisYap"
+        android:layout_width="160dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="125dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="152dp"
+        android:background="@drawable/back1"
+        android:text="Giriş Yap"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        android:textSize="16dp"
+        />
+
+    <Button
+        android:id="@+id/buttonSifreDegistir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Şifremi Unuttum"
+        app:layout_constraintBottom_toBottomOf="@+id/buttonGirisYap"
+        app:layout_constraintEnd_toEndOf="@+id/buttonGirisYap"
+        app:layout_constraintStart_toStartOf="@+id/buttonGirisYap"
+        app:layout_constraintTop_toBottomOf="parent"
+        android:background="#13232c"
+        android:textSize="16dp"
+        android:textColor="#ffffff"
+
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
